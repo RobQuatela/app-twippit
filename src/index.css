@@ -1,13 +1,52 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--main-bg-color);
+}
+
+html {
+    background-color: var(--main-bg-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+    --main-bg-color: #14171A;
+    --secondary-bg-color: #657786;
+    --main-txt-color: white;
+    --secondary-txt-color: #AAB8C2;
+    --action-color: #1DA1F2;
+    --border-color: #2f3336;
+}
+
+button {
+    background-color: var(--action-color) !important;
+}
+
+h1, h2, h3, h4, h5, label {
+    color: var(--main-txt-color);
+}
+
+p, small, h6, span {
+    color: var(--secondary-txt-color);
+}
+
+input {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-txt-color);
+}
+
+input:focus {
+    color: var(--secondary-txt-color) !important;
+}
+
+::placeholder {
+    color: var(--secondary-txt-color);
 }
